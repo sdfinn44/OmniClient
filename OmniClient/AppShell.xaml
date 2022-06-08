@@ -3,12 +3,37 @@
     x:Class="OmniClient.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:OmniClient"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:OmniClient.Pages"
+    Shell.FlyoutBehavior="Flyout">
+    
+    
+    
+    <FlyoutItem Title="Example 1">
+        <!--<FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS"
+                             Color="{AppThemeBinding 
+                                    Dark=White, 
+                                    Light={StaticResource SystemGray5Dark}}"
+                             Glyph="{x:Static fontAwesome:FontAwesomeIcons.MugHot}"/>
+        </FlyoutItem.Icon>-->
+        <ShellContent ContentTemplate="{DataTemplate local:ExamplePage}"
+            Route="Example" />
+    </FlyoutItem>
+    <FlyoutItem Title="Example 2">
+        <!--<FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS"
+                             Color="{AppThemeBinding 
+                                    Dark=White, 
+                                    Light={StaticResource SystemGray5Dark}}"
+                             Glyph="{x:Static fontAwesome:FontAwesomeIcons.MugHot}"/>
+        </FlyoutItem.Icon>-->
+        <ShellContent ContentTemplate="{DataTemplate local:ExamplePage}"
+            Route="Example2" />
+    </FlyoutItem>
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:ExamplePage}"
+        Route="Example" />-->
 
 </Shell>

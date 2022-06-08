@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:OmniClient.Models"
+             xmlns:viewmodel="clr-namespace:OmniClient.ViewModels"
+             x:DataType="viewmodel:ExampleViewModel"
+             x:Class="OmniClient.Pages.ExamplePage"
+             Title="{Binding Title}">
+    <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*, Auto">
+        <CollectionView BackgroundColor="WhiteSmoke"
+                        Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Examples}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Example">
+                    <Grid Padding="10">
+                        <Frame HeightRequest="100">
+                            <Grid ColumnDefinitions="*,*"
+                                  Padding="5">
+                                <Label Text="{Binding Name}" Grid.Column="0"
+                                       HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Description}"
+                                       HorizontalTextAlignment="Center"
+                                       Grid.Column="1"
+                                       Style="{StaticResource }"/>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Refresh Me"
+                Grid.Row="1"
+                Margin="5"
+                Command="{Binding GetExamplesCommand}"
+                IsEnabled="{Binding IsNotBusy}"/>
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.RowSpan="2"
+                           Grid.Column="2"/>
+    </Grid>
+</ContentPage>
