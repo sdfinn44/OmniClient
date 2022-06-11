@@ -5,9 +5,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:OmniClient.Pages"
     Shell.FlyoutBehavior="Flyout">
-    
-    
-    
+
+    <FlyoutItem Title="Jobs">
+        <!--<FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS"
+                             Color="{AppThemeBinding 
+                                    Dark=White, 
+                                    Light={StaticResource SystemGray5Dark}}"
+                             Glyph="{x:Static fontAwesome:FontAwesomeIcons.MugHot}"/>
+        </FlyoutItem.Icon>-->
+        <ShellContent ContentTemplate="{DataTemplate local:JobsPage}"
+            Route="Jobs" />
+    </FlyoutItem>
+
     <FlyoutItem Title="Example 1">
         <!--<FlyoutItem.Icon>
             <FontImageSource FontFamily="FAS"
@@ -19,17 +29,7 @@
         <ShellContent ContentTemplate="{DataTemplate local:ExamplePage}"
             Route="Example" />
     </FlyoutItem>
-    <FlyoutItem Title="Example 2">
-        <!--<FlyoutItem.Icon>
-            <FontImageSource FontFamily="FAS"
-                             Color="{AppThemeBinding 
-                                    Dark=White, 
-                                    Light={StaticResource SystemGray5Dark}}"
-                             Glyph="{x:Static fontAwesome:FontAwesomeIcons.MugHot}"/>
-        </FlyoutItem.Icon>-->
-        <ShellContent ContentTemplate="{DataTemplate local:ExamplePage}"
-            Route="Example2" />
-    </FlyoutItem>
+   
 
     <!--<ShellContent
         Title="Home"

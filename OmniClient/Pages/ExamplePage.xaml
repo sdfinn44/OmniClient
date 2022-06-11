@@ -9,8 +9,11 @@
     <Grid ColumnDefinitions="*,*"
           ColumnSpacing="5"
           RowDefinitions="*, Auto">
-        <CollectionView BackgroundColor="WhiteSmoke"
-                        Grid.ColumnSpan="2"
+        <RefreshView Grid.ColumnSpan="2"
+                     Command="{Binding GetExamplesCommand}"
+                     IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView BackgroundColor="WhiteSmoke"
+                        
                         ItemsSource="{Binding Examples}"
                         SelectionMode="None">
             <CollectionView.ItemTemplate>
@@ -31,6 +34,7 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        </RefreshView>
         <Button Text="Refresh Me"
                 Grid.Row="1"
                 Margin="5"

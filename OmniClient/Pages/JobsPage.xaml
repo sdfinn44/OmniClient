@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:OmniClient.Models"
+             xmlns:viewmodel="clr-namespace:OmniClient.ViewModels"
+             x:DataType="viewmodel:JobsViewModel"
+             x:Class="OmniClient.Pages.JobsPage"
+             Title="{Binding Title}">
+    <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*, Auto">
+        <RefreshView Grid.ColumnSpan="2"
+                     Command="{Binding GetJobsCommand}"
+                     IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView BackgroundColor="WhiteSmoke"
+                        
+                        ItemsSource="{Binding Jobs}"
+                        SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Job">
+                        <Grid Padding="10">
+                            <Frame HeightRequest="100">
+                                <Grid ColumnDefinitions="*,*"
+                                  Padding="5">
+                                    <Label Text="{Binding JobName}" Grid.Column="0"
+                                       HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Description}"
+                                       HorizontalTextAlignment="Center"
+                                       Grid.Column="1"
+                                       Style="{StaticResource }"/>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.ColumnSpan="2"/>
+        <AbsoluteLayout  BackgroundColor="WhiteSmoke"
+            Grid.Row="0"
+            Grid.Column="1"
+            Grid.ColumnSpan="2">
+            
+            <ImageButton Source="add.png" 
+            BackgroundColor="Transparent"
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+            AbsoluteLayout.LayoutBounds=".95,.95,40,40" 
+            Command="{Binding GotoAddPageCommand}"/>
+            
+        </AbsoluteLayout>
+
+    </Grid>
+</ContentPage>

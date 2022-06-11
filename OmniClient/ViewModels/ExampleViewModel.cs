@@ -19,6 +19,10 @@ public partial class ExampleViewModel: BaseViewModel
         Title = "Examples";
         this.exampleService = exampleService;
     }
+    [ObservableProperty]
+    bool isRefreshing;
+
+    
 
     [ICommand]
     public async Task GetExamples()
@@ -43,6 +47,7 @@ public partial class ExampleViewModel: BaseViewModel
         } finally
         {
             IsBusy = false;
+            IsRefreshing = false;
         }
 
     }

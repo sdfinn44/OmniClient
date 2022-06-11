@@ -25,16 +25,23 @@ public static class MauiProgram
 
 	private static void RegisterServices(IServiceCollection services)
     {
-		services.AddTransient<ExampleService>();
+        services.AddSingleton<ApiService>();
+        services.AddTransient<ExampleService>();
+        services.AddTransient<JobsService>();
+        services.AddTransient<PipelineService>();
     }
 
     private static void RegisterPages(IServiceCollection services)
     {
         services.AddTransient<ExamplePage>();
+        services.AddTransient<JobsPage>();
+        services.AddTransient<AddJobPage>();
     }
 
     private static void RegisterViewModels(IServiceCollection services)
     {
         services.AddTransient<ExampleViewModel>();
+        services.AddTransient<JobsViewModel>();
+        services.AddTransient<AddJobViewModel>();
     }
 }

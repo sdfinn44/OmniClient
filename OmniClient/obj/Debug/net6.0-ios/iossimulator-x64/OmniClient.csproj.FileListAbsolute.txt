@@ -216,6 +216,7 @@ C:\Repos\OmniClient\OmniClient\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-
 C:\Repos\OmniClient\OmniClient\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 C:\Repos\OmniClient\OmniClient\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\Repos\OmniClient\OmniClient\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
+C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\build-signature\signature
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\mauifont.inputs
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\mauisplash.inputs
@@ -236,6 +237,7 @@ C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\Resources\add.png
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\splash.png
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\splash@2x.png
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\splash@3x.png
@@ -247,18 +249,6 @@ C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\actool\_PartialAppManifest.items
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\actool\_BundleResourceWithLogicalName.items
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\actool\_ProcessedImageAssetsPath.items
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon20x20@2x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon20x20@3x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon29x29@2x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon29x29@3x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon40x40@2x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon40x40@3x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon60x60@2x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon60x60@3x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon76x76@2x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appicon83.5x83.5@2x.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\appiconItunesArtwork.png.ResolveUTIs.stamp
-C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\Contents.json.ResolveUTIs.stamp
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\ibtool\_BundleResourceWithLogicalName.items
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
 C:\Repos\OmniClient\OmniClient\obj\Debug\net6.0-ios\iossimulator-x64\coremlc\_PartialAppManifest.items

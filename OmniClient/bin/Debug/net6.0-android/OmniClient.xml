@@ -4,6 +4,9 @@
         <name>OmniClient</name>
     </assembly>
     <members>
+        <member name="P:OmniClient.ViewModels.AddJobViewModel.Job">
+            <inheritdoc cref="F:OmniClient.ViewModels.AddJobViewModel.job"/>
+        </member>
         <member name="P:OmniClient.ViewModels.BaseViewModel.IsBusy">
             <inheritdoc cref="F:OmniClient.ViewModels.BaseViewModel.isBusy"/>
         </member>
@@ -15,6 +18,24 @@
         </member>
         <member name="P:OmniClient.ViewModels.ExampleViewModel.GetExamplesCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OmniClient.ViewModels.ExampleViewModel.GetExamples"/>.</summary>
+        </member>
+        <member name="P:OmniClient.ViewModels.ExampleViewModel.IsRefreshing">
+            <inheritdoc cref="F:OmniClient.ViewModels.ExampleViewModel.isRefreshing"/>
+        </member>
+        <member name="F:OmniClient.ViewModels.JobsViewModel.gotoAddPageCommand">
+            <summary>The backing field for <see cref="P:OmniClient.ViewModels.JobsViewModel.GotoAddPageCommand"/>.</summary>
+        </member>
+        <member name="P:OmniClient.ViewModels.JobsViewModel.GotoAddPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OmniClient.ViewModels.JobsViewModel.GotoAddPage"/>.</summary>
+        </member>
+        <member name="F:OmniClient.ViewModels.JobsViewModel.getJobsCommand">
+            <summary>The backing field for <see cref="P:OmniClient.ViewModels.JobsViewModel.GetJobsCommand"/>.</summary>
+        </member>
+        <member name="P:OmniClient.ViewModels.JobsViewModel.GetJobsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:OmniClient.ViewModels.JobsViewModel.GetJobs"/>.</summary>
+        </member>
+        <member name="P:OmniClient.ViewModels.JobsViewModel.IsRefreshing">
+            <inheritdoc cref="F:OmniClient.ViewModels.JobsViewModel.isRefreshing"/>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
